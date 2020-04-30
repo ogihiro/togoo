@@ -187,3 +187,28 @@ img {
   width: 90%;
   max-width: 1000px;
 }
+.title-box {
+  text-align: center;
+
+  .title {
+    font-size: 2.5rem;
+    @include pc {
+      font-size: 4rem;
+    }
+    &-sub {
+      margin-top: 7px;
+      display: block;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-indent: 1px;
+      @include pc {
+        margin-top: 15px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.title-sub-color {
+  color: #fd6201;
+}

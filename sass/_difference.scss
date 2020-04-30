@@ -1,0 +1,69 @@
+/*------------------------------------------------------
+他社サービスとの違い
+/*-----------------------------------------------------*/
+.difference-title-box {
+  margin-bottom: 30px;
+  @include pc {
+    margin-bottom: 70px;
+  }
+}
+
+.difference-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.difference-content {
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+  @include pc {
+    width: calc(100% / 2 - 15px);
+    padding: 40px 35px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+    @include pc {
+      margin-bottom: 35px;
+    }
+  }
+  &:nth-last-child(2) {
+    @include pc {
+      margin-bottom: 0;
+    }
+  }
+  &-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    padding-left: 2em;
+    text-indent: -2em;
+    @include pc {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    &:before {
+      content: "";
+      background-image: url("/images/icon_check_red@2x.png");
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  &-text {
+    line-height: 1.5;
+  }
+}
+
+.cv-wrapper-middle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include pc {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

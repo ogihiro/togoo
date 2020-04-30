@@ -1,0 +1,64 @@
+/*------------------------------------------------------
+４つの選ばれる理由
+/*-----------------------------------------------------*/
+
+.reason-title-box {
+  margin-bottom: 50px;
+  @include pc {
+    margin-bottom: 55px;
+  }
+}
+
+.reason-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 50px;
+    @include pc {
+      margin-bottom: 100px;
+    }
+  }
+  &-image {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include pc {
+      width: calc(40% - 60px);
+    }
+  }
+  &-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    @include pc {
+      font-size: 3rem;
+    }
+  }
+  &-textbox {
+    @include pc {
+      width: 50%;
+    }
+  }
+  &-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    @include pc {
+      font-size: 1.8rem;
+      line-height: 2;
+    }
+  }
+  &-caution {
+    color: #f22424;
+    line-height: 2;
+    @include pc {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
