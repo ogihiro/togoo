@@ -562,6 +562,97 @@ img {
 }
 
 /*------------------------------------------------------
+４つの選ばれる理由
+/*-----------------------------------------------------*/
+.reason-title-box {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .reason-title-box {
+    margin-bottom: 55px;
+  }
+}
+
+.rezon-title-sub {
+  color: #000;
+}
+
+.reason-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reason-content:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .reason-content:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
+
+.reason-content-image {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .reason-content-image {
+    width: calc(40% - 60px);
+  }
+}
+
+.reason-content-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .reason-content-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .reason-content-textbox {
+    width: 50%;
+  }
+}
+
+.reason-content-text {
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .reason-content-text {
+    font-size: 1.8rem;
+  }
+}
+
+.reason-content-caution {
+  color: #f22424;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .reason-content-caution {
+    font-size: 1.4rem;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/*------------------------------------------------------
 リードコンテンツ
 /*-----------------------------------------------------*/
 .lead-wrapper {
