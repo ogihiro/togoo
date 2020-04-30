@@ -1,0 +1,97 @@
+/*------------------------------------------------------
+モジュール
+/*-----------------------------------------------------*/
+
+.pc {
+  display: block !important;
+}
+.sp {
+  display: none !important;
+}
+@media only screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  /*ベースを10pxにしています*/
+}
+
+body {
+  font-size: 1.4rem; /* font size 16pxと同等*/
+  font-family: "Hiragino Kaku Gothic ProN";
+  @include pc {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transform: 0.2s;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.sticky {
+  position: relative;
+  z-index: 100;
+  position: fixed;
+}
+/*------------------------------------------------------
+コンバージョンエリア
+/*-----------------------------------------------------*/
+.cv-wrapper {
+  width: 100%;
+}
+.cv-inner {
+  margin: 0 auto;
+  padding: 40px 15px;
+  max-width: 800px;
+  @include pc {
+    padding: 100px 15px;
+  }
+}
+/*------------------------------------------------------
+コンテンツ
+/*-----------------------------------------------------*/
+.section-wrapper-full {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include pc {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.section-inner-normal {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include pc {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

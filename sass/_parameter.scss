@@ -1,0 +1,35 @@
+$sp: 544px; // スマホ
+$pc: 768px; // PC
+$lg: 992px; // でかPC
+$xl: 1200px; // でかPC
+$xxl: 1600px; // でかでかPC
+
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: ($xxl)) {
+    @content;
+  }
+}

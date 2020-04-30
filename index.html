@@ -6,9 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
   <title>ToGoo</title>
 </head>
 <body>
+  <header>
+    <div class="nav-toggle">
+      <div class="toggle-parts-box">
+        <span class="toggle-parts"></span>
+        <span class="toggle-parts"></span>
+        <span class="toggle-parts"></span>
+      </div>
+    </div>
 
+    <div class="gloval-nav-sp">
+      <nav>
+        <ul>
+          <li><a href="#">できること</a></li>
+          <li><a href="#">選ばれる理由</a></li>
+          <li><a href="#">安心のサポート</a></li>
+          <li><a href="#">導入までの流れ</a></li>
+          <li><a href="#">料金</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="gloval-nav sticky">
+      <nav>
+        <ul class="gloval-nav-list">
+          <li class="gloval-nav-list-logo">
+            <img src="./img/logo.png" alt="">
+          </li>
+          <li class="gloval-nav-list-item"><a href="#">できること</a></li>
+          <li class="gloval-nav-list-item"><a href="#">選ばれる理由</a></li>
+          <li class="gloval-nav-list-item"><a href="#">安心のサポート</a></li>
+          <li class="gloval-nav-list-item"><a href="#">導入までの流れ</a></li>
+          <li class="gloval-nav-list-item"><a href="#">料金</a></li>
+          <li class="gloval-nav-list-item"><a href="#">よくある質問</a></li>
+          <li class="gloval-nav-list-item gloval-nav-list-contact"><a href="#">お問い合わせ</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="mv-wrapper">
+      <div class="mv-inner section-inner-normal">
+        <div class="mv-pc pc"><img src="images/mv_pc.png" alt=""></div>
+        <div class="mv-sp sp"><img src="images/mv_sp@2x.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="cv-wrapper">
+      <div class="cv-inner">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/btn_cv_pc.png">
+          <source media="(max-width: 767px)" srcset="images/btn_cv_sp@2x.png">
+          <img src="images/btn_cv_pc.png" alt="withyou">
+        </picture>
+      </div>
+    </div>
+  </main>
+  <!--/main-->
+  <script src="js/origin.js"></script>
 </body>
 </html>
