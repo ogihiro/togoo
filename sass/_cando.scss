@@ -8,6 +8,7 @@
 
 .cando-title {
   margin-bottom: 25px;
+  color: #fff;
   @include pc {
     margin-bottom: 30px;
   }
@@ -15,23 +16,76 @@
 
 .cando-lead {
   margin-bottom: 30px;
+  color: #fff;
+  line-height: 1.5;
   @include pc {
     text-align: center;
     margin-bottom: 85px;
+    font-size: 2rem;
   }
 }
 
 .cando-content {
   display: flex;
   flex-wrap: wrap;
+  background: #fff;
+  border-radius: 10px;
+  padding: 35px 20px;
   @include pc {
     flex-flow: row-reverse;
+    align-items: center;
+    padding: 50px 80px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @include pc {
+      margin-bottom: 30px;
+    }
   }
   &-img {
-    width: 50%;
+    width: 115px;
     margin: 0 auto;
+    margin-bottom: 20px;
+    @include pc {
+      width: 150px;
+    }
   }
   &-textbox {
     width: 100%;
+    @include pc {
+      max-width: 560px;
+      margin-right: 50px;
+    }
+  }
+  &-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    @include pc {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+    }
+  }
+  &-title-sub {
+    font-size: 1.5rem;
+    color: #fd6201;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    @include pc {
+      margin-bottom: 15px;
+    }
+    &:before {
+      content: "";
+      background-color: #fd6201;
+      width: 23px;
+      height: 1px;
+      margin-right: 10px;
+    }
+  }
+  &-text {
+    line-height: 1.5;
+    @include pc {
+      line-height: 2;
+    }
   }
 }
