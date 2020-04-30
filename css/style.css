@@ -126,6 +126,29 @@ img {
   max-width: 1000px;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 4rem;
+  }
+}
+
+.section-title-sub {
+  margin-top: 7px;
+  display: block;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .section-title-sub {
+    font-size: 1.5rem;
+  }
+}
+
 .gloval-nav-sp {
   background: #fff;
   color: #222;
@@ -371,5 +394,50 @@ img {
 
 .mv-inner .mv-pc {
   margin-top: 60px;
+}
+
+/*------------------------------------------------------
+できること
+/*-----------------------------------------------------*/
+.cando-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cando-title {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .cando-title {
+    margin-bottom: 30px;
+  }
+}
+
+.cando-lead {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .cando-lead {
+    text-align: center;
+    margin-bottom: 85px;
+  }
+}
+
+.cando-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .cando-content {
+    flex-flow: row-reverse;
+  }
+}
+
+.cando-content-img {
+  width: 50%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

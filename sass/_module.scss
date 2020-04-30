@@ -108,3 +108,19 @@ img {
   width: 90%;
   max-width: 1000px;
 }
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  @include pc {
+    font-size: 4rem;
+  }
+  &-sub {
+    margin-top: 7px;
+    display: block;
+    font-size: 1.2rem;
+    @include pc {
+      font-size: 1.5rem;
+    }
+  }
+}
