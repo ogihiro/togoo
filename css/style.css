@@ -628,12 +628,13 @@ img {
 
 .reason-content-text {
   margin-bottom: 10px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   .reason-content-text {
     font-size: 1.8rem;
+    line-height: 2;
   }
 }
 
@@ -650,6 +651,95 @@ img {
 
 .reverse {
   flex-direction: row-reverse;
+}
+
+/*------------------------------------------------------
+他社サービスとの違い
+/*-----------------------------------------------------*/
+.difference-title-box {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .difference-title-box {
+    margin-bottom: 70px;
+  }
+}
+
+.difference-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.difference-content {
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .difference-content {
+    width: calc(100% / 2 - 15px);
+    padding: 40px 35px;
+  }
+}
+
+.difference-content:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .difference-content:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .difference-content:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+.difference-content-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+@media (min-width: 768px) {
+  .difference-content-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.difference-content-title:before {
+  content: "";
+  background-image: url("/images/icon_check_red@2x.png");
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.difference-content-text {
+  line-height: 1.5;
+}
+
+.cv-wrapper-middle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .cv-wrapper-middle {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 /*------------------------------------------------------
