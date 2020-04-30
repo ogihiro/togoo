@@ -71,6 +71,35 @@ img {
   z-index: 100;
   position: fixed;
 }
+
+/*------------------------------------------------------
+背景
+/*-----------------------------------------------------*/
+
+.bg-stripe {
+  background: url("../images/bg_stripe_20.jpg");
+  background-repeat: repeat;
+}
+
+.bg-gray {
+  background: #f8f8f8;
+}
+
+.bg-stripe-orange {
+  background: url("../images/bg_stripe_100.jpg") repeat;
+  position: relative;
+  &::after {
+    background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+    opacity: 0.85;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
 /*------------------------------------------------------
 コンバージョンエリア
 /*-----------------------------------------------------*/
@@ -78,6 +107,10 @@ img {
   width: 100%;
 }
 .cv-inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.cv-inner-middle {
   margin: 0 auto;
   padding: 40px 15px;
   max-width: 800px;

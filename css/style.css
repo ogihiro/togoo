@@ -80,6 +80,34 @@ img {
 }
 
 /*------------------------------------------------------
+背景
+/*-----------------------------------------------------*/
+.bg-stripe {
+  background: url("../images/bg_stripe_20.jpg");
+  background-repeat: repeat;
+}
+
+.bg-gray {
+  background: #f8f8f8;
+}
+
+.bg-stripe-orange {
+  background: url("../images/bg_stripe_100.jpg") repeat;
+  position: relative;
+}
+
+.bg-stripe-orange::after {
+  background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+  opacity: 0.85;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*------------------------------------------------------
 コンバージョンエリア
 /*-----------------------------------------------------*/
 .cv-wrapper {
@@ -88,12 +116,17 @@ img {
 
 .cv-inner {
   margin: 0 auto;
+  max-width: 800px;
+}
+
+.cv-inner-middle {
+  margin: 0 auto;
   padding: 40px 15px;
   max-width: 800px;
 }
 
 @media (min-width: 768px) {
-  .cv-inner {
+  .cv-inner-middle {
     padding: 100px 15px;
   }
 }
@@ -371,5 +404,25 @@ img {
 
 .mv-inner .mv-pc {
   margin-top: 60px;
+}
+
+/*------------------------------------------------------
+リードコンテンツ
+/*-----------------------------------------------------*/
+.lead-wrapper {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .lead-wrapper {
+    padding-top: 70px;
+    padding-bottom: 170px;
+  }
+}
+
+.lead-inner {
+  position: relative;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
