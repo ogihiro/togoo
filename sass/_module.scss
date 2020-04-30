@@ -23,10 +23,31 @@ html {
 }
 
 body {
-  font-size: 1.4rem; /* font size 16pxと同等*/
+  font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN";
   @include pc {
     font-size: 1.6rem;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 544px) {
+  p,
+  a,
+  ul,
+  li {
+    font-size: calc(0.875rem + ((1vw - 5.44px) * 0.8929));
+  }
+}
+@media (min-width: 768px) {
+  p,
+  a,
+  ul,
+  li {
+    font-size: 16px;
   }
 }
 
@@ -67,31 +88,23 @@ img {
 /*------------------------------------------------------
 コンテンツ
 /*-----------------------------------------------------*/
-.section-wrapper-full {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @include pc {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-.section-inner-normal {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .section-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   @include pc {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
+}
+.section-inner {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+.section-inner-narrow {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
 }
