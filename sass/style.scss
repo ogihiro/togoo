@@ -30,3 +30,18 @@
 }
 
 @import "_cando.scss";
+/*------------------------------------------------------
+リードコンテンツ
+/*-----------------------------------------------------*/
+.lead-wrapper {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  @include pc {
+    padding-top: 70px;
+    padding-bottom: 170px;
+  }
+}
+.lead-inner {
+  position: relative;
+  z-index: 1;
+}
