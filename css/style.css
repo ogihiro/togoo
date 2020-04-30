@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*------------------------------------------------------
-モジュール
+全体調整
 /*-----------------------------------------------------*/
 .pc {
   display: block !important;
@@ -10,11 +10,21 @@
   display: none !important;
 }
 
+.xs {
+  display: none !important;
+}
+
 @media only screen and (max-width: 767px) {
   .pc {
     display: none !important;
   }
   .sp {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 543px) {
+  .xs {
     display: block !important;
   }
 }
@@ -493,6 +503,184 @@ img {
 }
 
 /*------------------------------------------------------
+リードコンテンツ
+/*-----------------------------------------------------*/
+.lead-wrapper {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .lead-wrapper {
+    padding-top: 70px;
+    padding-bottom: 170px;
+  }
+}
+
+.lead-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/*------------------------------------------------------
+こんなお悩みはありませんか？
+/*-----------------------------------------------------*/
+.problem-title-box {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .problem-title-box {
+    margin-bottom: 70px;
+  }
+}
+
+.problem-list-pc {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.problem-list-pc .problem-list-pc-item {
+  width: calc(100% / 4 - 20px);
+}
+
+.problem-list-sp {
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.problem-list-sp .problem-list-sp-item {
+  position: relative;
+  width: calc(100% / 2 - 10px);
+  margin-bottom: 35px;
+  background: #fff;
+  box-shadow: 0 0 15px #e0e0e0;
+  padding: 50px 10px 20px 10px;
+}
+
+.problem-list-sp .problem-list-sp-item .circle {
+  font-size: 3.1rem;
+  background-color: #fd6201;
+  color: #fff;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 46px;
+  line-height: 46px;
+  height: 46px;
+  border-radius: 25px;
+}
+
+.problem-list-sp .problem-list-sp-item .text {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.problem-list-sp .problem-list-sp-item .sub-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f22424;
+}
+
+.problem-list-sp .problem-list-sp-item .red-line {
+  border-top: 2px solid #f22424;
+  width: 85%;
+}
+
+.problem-list-sp .problem-list-sp-item:nth-child(3), .problem-list-sp .problem-list-sp-item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.solution-under-arrow {
+  margin: 0 auto 25px;
+  width: 92px;
+}
+
+@media (min-width: 768px) {
+  .solution-under-arrow {
+    margin: 0 auto 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .solution-cont {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1116px;
+  }
+}
+
+.solution-cont .solution-cont-title {
+  width: 300px;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: 768px) {
+  .solution-cont .solution-cont-title {
+    width: 465px;
+    margin: 0 50px 0 0;
+  }
+}
+
+.solution-list .solution-list-item {
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .solution-list .solution-list-item {
+    max-width: 100%;
+    font-size: 2.2rem;
+  }
+}
+
+.solution-list .solution-list-item .check-icon {
+  width: 31px;
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .solution-list .solution-list-item .check-icon {
+    width: 38px;
+  }
+}
+
+.solution-list .solution-list-item:not(:last-of-type) {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px dotted #333;
+}
+
+@media (min-width: 768px) {
+  .solution-list .solution-list-item:not(:last-of-type) {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.solution-list .solution-list-item-text {
+  width: calc(100% - 50px);
+}
+
+/*------------------------------------------------------
 できること
 /*-----------------------------------------------------*/
 .cando-inner {
@@ -919,100 +1107,5 @@ img {
   line-height: 2;
   padding-left: 1em;
   text-indent: -1em;
-}
-
-/*------------------------------------------------------
-リードコンテンツ
-/*-----------------------------------------------------*/
-.lead-wrapper {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-
-@media (min-width: 768px) {
-  .lead-wrapper {
-    padding-top: 70px;
-    padding-bottom: 170px;
-  }
-}
-
-.lead-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/*------------------------------------------------------
-こんなお悩みはありませんか？
-/*-----------------------------------------------------*/
-.problem-title-box {
-  margin-bottom: 35px;
-}
-
-@media (min-width: 768px) {
-  .problem-title-box {
-    margin-bottom: 70px;
-  }
-}
-
-.problem-list-pc {
-  margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.problem-list-pc .problem-list-pc-item {
-  width: calc(100% / 4 - 20px);
-}
-
-.problem-list-sp {
-  margin-bottom: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.problem-list-sp .problem-list-sp-item {
-  position: relative;
-  width: calc(100% / 2 - 10px);
-  margin-bottom: 35px;
-  background: #fff;
-  box-shadow: 0 0 15px #e0e0e0;
-  padding: 50px 10px 20px 10px;
-}
-
-.problem-list-sp .problem-list-sp-item .circle {
-  font-size: 3.1rem;
-  background-color: #fd6201;
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 46px;
-  line-height: 46px;
-  height: 46px;
-  border-radius: 25px;
-}
-
-.problem-list-sp .problem-list-sp-item .text {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.problem-list-sp .problem-list-sp-item .sub-text {
-  font-weight: 700;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #f22424;
-}
-
-.problem-list-sp .problem-list-sp-item .red-line {
-  border-top: 2px solid #f22424;
-  width: 85%;
 }
 /*# sourceMappingURL=style.css.map */

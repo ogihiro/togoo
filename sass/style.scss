@@ -1,114 +1,12 @@
+//core
 @import "_parameter.scss";
 @import "_module.scss";
 @import "_nav.scss";
 
-/*------------------------------------------------------
-メインビジュアル
-/*-----------------------------------------------------*/
-.mv-wrapper {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  @include pc {
-    background: url("../images/mv_pc_bg.jpg");
-    background-size: cover;
-    height: 760px;
-    padding: 0 30px;
-  }
-}
-.mv-inner {
-  width: 100%;
-  @include pc {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .mv-pc {
-    margin-top: 60px;
-  }
-}
-
+//contents
+@import "_lead.scss";
+@import "_problem.scss";
 @import "_cando.scss";
 @import "_reason.scss";
 @import "_difference.scss";
 @import "_support.scss";
-
-/*------------------------------------------------------
-リードコンテンツ
-/*-----------------------------------------------------*/
-.lead-wrapper {
-  padding-top: 30px;
-  padding-bottom: 80px;
-  @include pc {
-    padding-top: 70px;
-    padding-bottom: 170px;
-  }
-}
-.lead-inner {
-  position: relative;
-  z-index: 1;
-}
-/*------------------------------------------------------
-こんなお悩みはありませんか？
-/*-----------------------------------------------------*/
-.problem-title-box {
-  margin-bottom: 35px;
-  @include pc {
-    margin-bottom: 70px;
-  }
-}
-.problem-list-pc {
-  margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  .problem-list-pc-item {
-    width: calc(100% / 4 - 20px);
-  }
-}
-.problem-list-sp {
-  margin-bottom: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  .problem-list-sp-item {
-    position: relative;
-    width: calc(100% / 2 - 10px);
-    margin-bottom: 35px;
-    background: #fff;
-    box-shadow: 0 0 15px #e0e0e0;
-    padding: 50px 10px 20px 10px;
-    .circle {
-      font-size: 3.1rem;
-      background-color: #fd6201;
-      color: #fff;
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-      width: 46px;
-      line-height: 46px;
-      height: 46px;
-      border-radius: 25px;
-    }
-    .text {
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .sub-text {
-      font-weight: 700;
-      text-align: center;
-      font-size: 1.5rem;
-      color: $red;
-    }
-    .red-line {
-      border-top: 2px solid $red;
-      width: 85%;
-    }
-  }
-}

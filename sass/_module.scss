@@ -1,5 +1,5 @@
 /*------------------------------------------------------
-モジュール
+全体調整
 /*-----------------------------------------------------*/
 
 .pc {
@@ -8,6 +8,10 @@
 .sp {
   display: none !important;
 }
+.xs {
+  display: none !important;
+}
+
 @media only screen and (max-width: 767px) {
   .pc {
     display: none !important;
@@ -16,7 +20,11 @@
     display: block !important;
   }
 }
-
+@media only screen and (max-width: 543px) {
+  .xs {
+    display: block !important;
+  }
+}
 html {
   font-size: 62.5%;
   /*ベースを10pxにしています*/
