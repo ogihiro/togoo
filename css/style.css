@@ -168,6 +168,12 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .cv-wrapper {
+    min-width: 1000px;
+  }
+}
+
 .cv-inner {
   width: 100%;
   margin: 0 auto;
@@ -205,8 +211,7 @@ img {
 
 @media (min-width: 768px) {
   .section-wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 40px;
   }
 }
 
@@ -216,10 +221,22 @@ img {
   max-width: 1200px;
 }
 
+@media (min-width: 768px) {
+  .section-inner {
+    min-width: 1000px;
+  }
+}
+
 .section-inner-narrow {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  .section-inner-narrow {
+    min-width: 1000px;
+  }
 }
 
 .title-box {

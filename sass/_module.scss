@@ -144,6 +144,9 @@ img {
 .cv-wrapper {
   width: 90%;
   margin: 0 auto;
+  @include pc {
+    min-width: 1000px;
+  }
 }
 .cv-inner {
   width: 100%;
@@ -171,19 +174,24 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   @include pc {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 40px;
   }
 }
 .section-inner {
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
+  @include pc {
+    min-width: 1000px;
+  }
 }
 .section-inner-narrow {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
+  @include pc {
+    min-width: 1000px;
+  }
 }
 .title-box {
   text-align: center;
