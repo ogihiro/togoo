@@ -351,7 +351,7 @@ h1 a {
 }
 
 .title-box .title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 @media (min-width: 768px) {
@@ -1360,9 +1360,15 @@ h1 a {
   margin-bottom: 50px;
 }
 
+@media (min-width: 768px) {
+  .flow-title-box {
+    margin-bottom: 70px;
+  }
+}
+
 .flow-list {
   max-width: 800px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .flow-list-item {
@@ -1405,7 +1411,7 @@ h1 a {
   justify-content: center;
   background-color: #fd6201;
   border-radius: 50%;
-  color: #e8eff7;
+  color: #fff;
   font-size: 2.3rem;
   margin-right: 20px;
 }

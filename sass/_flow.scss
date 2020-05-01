@@ -3,10 +3,13 @@
 /*-----------------------------------------------------*/
 .flow-title-box {
   margin-bottom: 50px;
+  @include pc {
+    margin-bottom: 70px;
+  }
 }
 .flow-list {
   max-width: 800px;
-  margin: 0;
+  margin: 0 auto;
   &-item {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +45,7 @@
     justify-content: center;
     background-color: $orange;
     border-radius: 50%;
-    color: #e8eff7;
+    color: #fff;
     font-size: 2.3rem;
     margin-right: 20px;
     @include pc {
