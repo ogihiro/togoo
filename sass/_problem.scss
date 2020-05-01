@@ -92,7 +92,6 @@
 }
 .solution-list {
   .solution-list-item {
-    font-size: 1.8rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -100,7 +99,12 @@
     margin: 0 auto;
     @include pc {
       max-width: 100%;
-      font-size: 2.2rem;
+    }
+    span {
+      font-size: 1.8rem;
+      @include pc {
+        font-size: 2.2rem;
+      }
     }
     .check-icon {
       width: 31px;
