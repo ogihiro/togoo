@@ -48,18 +48,32 @@ body {
 p,
 a,
 ul,
-li {
+li,
+span {
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 @media (min-width: 768px) {
   p,
   a,
   ul,
-  li {
+  li,
+  span {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 2;
+  }
+}
+
+h2,
+h3 {
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  h2,
+  h3 {
+    line-height: 2;
   }
 }
 
@@ -938,7 +952,6 @@ h1 a {
 .cando-lead {
   margin-bottom: 30px;
   color: #fff;
-  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
@@ -1032,16 +1045,6 @@ h1 a {
   margin-right: 10px;
 }
 
-.cando-content-text {
-  line-height: 1.8;
-}
-
-@media (min-width: 768px) {
-  .cando-content-text {
-    line-height: 2;
-  }
-}
-
 /*------------------------------------------------------
 ４つの選ばれる理由
 /*-----------------------------------------------------*/
@@ -1105,19 +1108,16 @@ h1 a {
 
 .reason-content-text {
   margin-bottom: 10px;
-  line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   .reason-content-text {
     font-size: 1.8rem;
-    line-height: 2;
   }
 }
 
 .reason-content-caution {
   color: #f22424;
-  line-height: 2;
 }
 
 @media (min-width: 768px) {
@@ -1201,10 +1201,6 @@ h1 a {
   background-size: contain;
   vertical-align: middle;
   margin-right: 5px;
-}
-
-.difference-content-text {
-  line-height: 1.5;
 }
 
 .cv-wrapper-middle {
@@ -1314,17 +1310,6 @@ h1 a {
 .support-content-title {
   font-size: 1.6rem;
   margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.support-content-text {
-  line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-  .support-content-text {
-    line-height: 2;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1348,7 +1333,6 @@ h1 a {
 }
 
 .other-support-list-item {
-  line-height: 2;
   padding-left: 1em;
   text-indent: -1em;
 }

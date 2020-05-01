@@ -44,15 +44,12 @@
   }
   &-text {
     margin-bottom: 10px;
-    line-height: 1.5;
     @include pc {
       font-size: 1.8rem;
-      line-height: 2;
     }
   }
   &-caution {
     color: #f22424;
-    line-height: 2;
     @include pc {
       font-size: 1.4rem;
     }

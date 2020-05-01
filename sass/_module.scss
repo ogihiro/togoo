@@ -41,15 +41,23 @@ body {
 p,
 a,
 ul,
-li {
+li,
+span {
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.8;
   @include pc {
     font-size: 1.6rem;
-    line-height: 1.6;
+    line-height: 2;
   }
 }
 
+h2,
+h3 {
+  line-height: 1.8;
+  @include pc {
+    line-height: 2;
+  }
+}
 a {
   color: #000;
   text-decoration: none;
