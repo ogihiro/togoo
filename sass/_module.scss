@@ -53,16 +53,17 @@ li {
 a {
   color: #000;
   text-decoration: none;
-  transform: 0.2s;
+  transition: 0.3s;
+  cursor: pointer;
   &:hover {
     opacity: 0.8;
-    transition: 0.2s;
   }
 }
 
 img {
   width: 100%;
   height: auto;
+  vertical-align: top;
 }
 
 .sticky {
@@ -96,6 +97,83 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
+  }
+}
+
+/*------------------------------------------------------
+ヘッダー
+/*-----------------------------------------------------*/
+
+header {
+  background: #fff;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  @include pc {
+    height: 80px;
+    padding-left: 30px;
+  }
+  @include xl {
+    align-items: center;
+  }
+}
+h1 {
+  width: 144px;
+  @include pc {
+    width: 290px;
+  }
+  a {
+    display: block;
+    cursor: pointer;
+  }
+}
+.nav-sp-contact-btn {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  background: $red;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 120px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  @include pc {
+    width: 250px;
+    right: 100px;
+  }
+  @include xl {
+    display: none;
+  }
+  .yellow-text {
+    color: $yellow;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    @include pc {
+      font-size: 1.5rem;
+    }
+  }
+  .text {
+    width: 100%;
+    @include pc {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -152,6 +230,11 @@ img {
   width: 100%;
   margin: 0 auto;
   max-width: 800px;
+  .cv-link {
+    &:hover {
+      opacity: 0.85;
+    }
+  }
 }
 .cv-inner-top {
   margin-bottom: 35px;

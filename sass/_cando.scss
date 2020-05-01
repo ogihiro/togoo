@@ -68,7 +68,7 @@
   &-title-sub {
     font-size: 1.5rem;
     color: #fd6201;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     @include pc {
@@ -83,7 +83,7 @@
     }
   }
   &-text {
-    line-height: 1.5;
+    line-height: 1.8;
     @include pc {
       line-height: 2;
     }

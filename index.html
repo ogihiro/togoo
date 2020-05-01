@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>ToGoo</title>
 </head>
 
 <body>
   <header>
+    <h1><a href="#"><img src="images/logo_header_orange.png" alt="飲食店特化型WEB決済サービス ToGoo トゥーゴー"></a></h1>
+
     <div class="nav-toggle">
       <div class="toggle-parts-box">
         <span class="toggle-parts"></span>
@@ -20,35 +23,43 @@
         <span class="toggle-parts"></span>
       </div>
     </div>
+    <a class="nav-sp-contact-btn">
+      <span class="yellow-text">最短2日でスタート</span><span class="text">お問い合わせ</span>
+    </a>
 
-    <div class="gloval-nav-sp">
+    <div class="global-nav-sp">
       <nav>
+        <p class="global-nav-sp-logo">
+          <img src="images/logo_white.png" alt="飲食店特化型WEB決済サービス ToGoo トゥーゴー">
+        </p>
         <ul>
-          <li><a href="#">できること</a></li>
-          <li><a href="#">選ばれる理由</a></li>
-          <li><a href="#">安心のサポート</a></li>
-          <li><a href="#">導入までの流れ</a></li>
-          <li><a href="#">料金</a></li>
-          <li><a href="#">よくある質問</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-
+          <li><a href="#cando-wrapper">ToGooでできること</a></li>
+          <li><a href="#reason-wrapper">選ばれる理由</a></li>
+          <li><a href="#support-wrapper">安心のサポート</a></li>
+          <li><a href="#flow-wrapper">導入までの流れ</a></li>
+          <li><a href="#price-wrapper">料金</a></li>
+          <li><a href="#faq-wrapper">よくある質問</a></li>
         </ul>
+        <div class="global-nav-sp-contact">
+          <div class="global-nav-sp-contact-tel">
+            <a href="tel:03-5341-4495"><span class="icon"><i class="fas fa-phone"></i></span>03-5341-4495<span class="eigyo">平日 10:00~18:00</span></a>
+          </div>
+          <div class="global-nav-sp-contact-form">
+            <a href="#contact-wrapper"><span class="icon"><i class="far fa-envelope"></i></span>お問い合わせ<span class="eigyo">24時間受付中</span></a>
+          </div>
+        </div>
       </nav>
     </div>
-    <div class="gloval-nav sticky">
+    <div class="global-nav sticky">
       <nav>
-        <ul class="gloval-nav-list">
-          <li class="gloval-nav-list-logo">
-            <img src="./img/logo.png" alt="">
-          </li>
-          <li class="gloval-nav-list-item"><a href="#">できること</a></li>
-          <li class="gloval-nav-list-item"><a href="#">選ばれる理由</a></li>
-          <li class="gloval-nav-list-item"><a href="#">安心のサポート</a></li>
-          <li class="gloval-nav-list-item"><a href="#">導入までの流れ</a></li>
-          <li class="gloval-nav-list-item"><a href="#">料金</a></li>
-          <li class="gloval-nav-list-item"><a href="#">よくある質問</a></li>
-          <li class="gloval-nav-list-item gloval-nav-list-contact"><a href="#">お問い合わせ</a></li>
-          <li></li>
+        <ul class="global-nav-list">
+          <li class="global-nav-list-item"><a href="#cando-wrapper" class="global-nav-list-text-link">できること</a></li>
+          <li class="global-nav-list-item"><a href="#reason-wrapper" class="global-nav-list-text-link">選ばれる理由</a></li>
+          <li class="global-nav-list-item"><a href="#support-wrapper" class="global-nav-list-text-link">安心のサポート</a></li>
+          <li class="global-nav-list-item"><a href="#flow-wrapper" class="global-nav-list-text-link">導入までの流れ</a></li>
+          <li class="global-nav-list-item"><a href="#price-wrapper" class="global-nav-list-text-link">料金</a></li>
+          <li class="global-nav-list-item"><a href="#faq-wrapper" class="global-nav-list-text-link">よくある質問</a></li>
+          <li class="global-nav-list-item global-nav-list-contact"><a href="#contact-wrapper" class="global-nav-list-contact-btn">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -64,11 +75,13 @@
       <div class="lead-inner">
         <div class="cv-wrapper">
           <div class="cv-inner cv-inner-top">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/btn_cv_pc.png">
-              <source media="(max-width: 767px)" srcset="images/btn_cv_sp@2x.png">
-              <img src="images/btn_cv_pc.png" alt="最短2日でスタート まずはお気軽にお問い合わせください">
-            </picture>
+            <a href="#contact-wrapper" class="cv-link">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/btn_cv_pc.png">
+                <source media="(max-width: 767px)" srcset="images/btn_cv_sp@2x.png">
+                <img src="images/btn_cv_pc.png" alt="最短2日でスタート まずはお気軽にお問い合わせください">
+              </picture>
+            </a>
           </div>
         </div>
         <div class="ploblem-inner section-inner">
@@ -129,7 +142,7 @@
         </div>
       </div>
     </div>
-    <article class="section-wrapper cando-wrapper bg-stripe-orange">
+    <article id="cando-wrapper" class="section-wrapper cando-wrapper bg-stripe-orange">
       <div class="section-inner-narrow cando-inner">
         <div class="title-box ">
           <h2 class="title cando-title">ToGooでできること<span class="title-sub">
@@ -141,7 +154,7 @@
         </p>
         <section class="cando-content">
           <div class="cando-content-img">
-            <img src="./images/dekiru_image_01.png" alt="tekeout">
+            <img src="/images/dekiru_image_01.png" alt="tekeout">
           </div>
           <div class="cando-content-textbox">
             <h3 class="cando-content-title">
@@ -156,7 +169,7 @@
         </section>
         <section class="cando-content">
           <div class="cando-content-img">
-            <img src="./images/dekiru_image_02.png" alt="tekeout">
+            <img src="/images/dekiru_image_02.png" alt="tekeout">
           </div>
           <div class="cando-content-textbox">
 
@@ -172,7 +185,7 @@
         </section>
         <section class="cando-content">
           <div class="cando-content-img">
-            <img src="./images/dekiru_image_03.png" alt="tekeout">
+            <img src="/images/dekiru_image_03.png" alt="tekeout">
           </div>
           <div class="cando-content-textbox">
 
@@ -188,7 +201,7 @@
         </section>
         <section class="cando-content">
           <div class="cando-content-img">
-            <img src="./images/dekiru_image_04.png" alt="tekeout">
+            <img src="/images/dekiru_image_04.png" alt="tekeout">
           </div>
           <div class="cando-content-textbox">
             <h3 class="cando-content-title">
@@ -203,7 +216,7 @@
         </section>
       </div>
     </article>
-    <article class="section-wrapper reazon-wrapper">
+    <article id="reason-wrapper" class="section-wrapper reason-wrapper">
       <div class="section-inner-narrow reason-inner">
         <div class="title-box reason-title-box">
           <h2 class="title reazon-title">４つの選ばれる理由<span class="title-sub
@@ -213,14 +226,14 @@
         </div>
         <section class="reason-content">
           <div class="reason-content-image">
-            <img src="./images/reason_image_01.png" alt="">
+            <img src="/images/reason_image_01.png" alt="">
           </div>
           <div class="reason-content-textbox">
             <h3 class="reason-content-title">
               販売手数料・振込手数料<br>一切かかりません
             </h3>
             <p class="reason-content-text">
-              売上の数％を手数料として支払う一般的なサービスとは違い、いくら売り上げても余計な手数料は一切かかりません。支払う料金は月額利用料の1万円だけなので安心です。
+              売上の10%～40％程度を手数料として支払う一般的なプラットフォームサービスとは違い、いくら売り上げても余計な手数料は一切かかりません。だから利益が一番残りやすいのが特徴です。
             </p>
             <p class="reason-content-caution">
               ※カード決済手数料の3.6%をのぞく
@@ -229,7 +242,7 @@
         </section>
         <section class="reason-content reverse">
           <div class="reason-content-image">
-            <img src="./images/reason_image_02.png" alt="">
+            <img src="/images/reason_image_02.png" alt="">
           </div>
           <div class="reason-content-textbox">
             <h3 class="reason-content-title">
@@ -243,7 +256,7 @@
         </section>
         <section class="reason-content">
           <div class="reason-content-image">
-            <img src="./images/reason_image_03.png" alt="">
+            <img src="/images/reason_image_03.png" alt="">
           </div>
           <div class="reason-content-textbox">
             <h3 class="reason-content-title">
@@ -259,7 +272,7 @@
         </section>
         <section class="reason-content reverse">
           <div class="reason-content-image">
-            <img src="./images/reason_image_04.png" alt="">
+            <img src="/images/reason_image_04.png" alt="">
           </div>
           <div class="reason-content-textbox">
             <h3 class="reason-content-title">
@@ -272,7 +285,7 @@
         </section>
       </div>
     </article>
-    <article class="section-wrapper difference-wrapper bg-gray">
+    <article id="difference-wrapper" class="section-wrapper difference-wrapper bg-gray">
       <div class="section-inner difference-inner">
         <div class="title-box difference-title-box">
           <h2 class="title difference-title">他社サービスとの違い</h2>
@@ -315,14 +328,16 @@
     </article>
     <div class="cv-wrapper bg-stripe cv-wrapper-middle">
       <div class="cv-inner">
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/btn_cv_pc.png">
-          <source media="(max-width: 767px)" srcset="images/btn_cv_sp@2x.png">
-          <img src="images/btn_cv_pc.png" alt="最短2日でスタート まずはお気軽にお問い合わせください">
-        </picture>
+        <a href="#contact-wrapper" class="cv-link">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/btn_cv_pc.png">
+            <source media="(max-width: 767px)" srcset="images/btn_cv_sp@2x.png">
+            <img src="images/btn_cv_pc.png" alt="最短2日でスタート まずはお気軽にお問い合わせください">
+          </picture>
+        </a>
       </div>
     </div>
-    <article class="section-wrapper support-wrapper">
+    <article id="support-wrapper" class="section-wrapper support-wrapper">
       <div class="section-inner support-inner">
         <div class="title-box support-title-box">
           <h2 class="title support-title">安心のサポート体制<span class="title-sub title-sub-color">
@@ -337,7 +352,7 @@
 
           <section class="support-content">
             <div class="support-content-image">
-              <img src="./images/support_01.png" alt="全国対応">
+              <img src="/images/support_01.png" alt="全国対応">
             </div>
             <div class="support-content-textbox">
               <h3 class="support-content-title">北海道から沖縄まで全国対応</h3>
@@ -348,7 +363,7 @@
           </section>
           <section class="support-content">
             <div class="support-content-image">
-              <img src="./images/support_02.png" alt="全国対応">
+              <img src="/images/support_02.png" alt="売上UP">
             </div>
             <div class="support-content-textbox">
               <h3 class="support-content-title">導入後の売上向上施策のご提案</h3>
@@ -359,7 +374,7 @@
           </section>
           <section class="support-content">
             <div class="support-content-image">
-              <img src="./images/support_02.png" alt="全国対応">
+              <img src="/images/support_03.png" alt="認知度アップ">
             </div>
             <div class="support-content-textbox">
               <h3 class="support-content-title">販促ポスターを無料で作成</h3>
@@ -379,13 +394,22 @@
             </ul>
           </div>
         </div>
-
-
       </div>
     </article>
   </main>
   <!--/main-->
   <script src="js/origin.js"></script>
+
+  <script>
+    var headerHight = $("header").outerHeight();
+    $("a").click(function () {
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? "body" : href);
+      var position = target.offset().top - headerHight;
+      $("html, body").animate({ scrollTop: position }, 500, "swing");
+      //return false;
+    });
+  </script>
 </body>
 
 </html>

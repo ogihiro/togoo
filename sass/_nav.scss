@@ -1,8 +1,8 @@
 @import "_parameter.scss";
 
 // SP用ナビゲーション
-.gloval-nav-sp {
-  background: #fff;
+.global-nav-sp {
+  background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
   color: #222;
   position: fixed;
   top: 0;
@@ -14,22 +14,28 @@
   display: flex;
   visibility: hidden;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 29px;
   opacity: 0;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  nav {
+    margin-top: 50px;
+    width: 90%;
+    ul {
+      margin-bottom: 35px;
+    }
+  }
   @include xl {
     display: none;
   }
   a {
     display: block;
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 0;
-    transition: color 0.6s ease;
+    padding: 8px 0;
+    font-weight: 700;
+    font-size: 1.8rem;
     &:hover {
-      color: #666;
+      color: $yellow;
     }
   }
 
@@ -66,29 +72,47 @@
     }
   }
 }
+.global-nav-sp-logo {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto 15px;
+}
 
 // トグルの調整
 .nav-toggle {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  height: 32px;
-  padding: 15px 15px 65px 15px;
-  background: #fff;
   cursor: pointer;
   z-index: 1000;
+  padding-top: 10px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  @include pc {
+    padding-top: 16px;
+    padding-right: 10px;
+  }
   @include xl {
     display: none;
   }
 
   .toggle-parts-box {
     position: relative;
-    width: 36px;
+    width: 32px;
+    @include pc {
+      width: 50px;
+    }
     &:after {
       position: absolute;
-      top: 42px;
-      font-size: 12px;
+      top: 22px;
+      font-size: 9px;
+      font-weight: 700;
+      left: 0;
+      right: 0;
       content: "MENU";
+      @include pc {
+        top: 35px;
+        font-size: 13px;
+      }
     }
   }
   .toggle-parts {
@@ -104,18 +128,17 @@
       top: 0;
     }
     &:nth-child(2) {
-      top: 14px;
+      top: 8px;
+      @include pc {
+        top: 12px;
+      }
     }
     &:nth-child(3) {
-      top: 28px;
+      top: 16px;
+      @include pc {
+        top: 24px;
+      }
     }
-  }
-
-  &:hover span:nth-child(1) {
-    top: 4px;
-  }
-  &:hover span:nth-child(3) {
-    top: 23px;
   }
 }
 
@@ -123,7 +146,7 @@
 .open {
   overflow: hidden;
   .nav-toggle span {
-    background: #000;
+    background: #fff;
     color: #fff;
     &:nth-child(1) {
       top: 15px;
@@ -139,8 +162,13 @@
       transform: rotate(-45deg);
     }
   }
+  .toggle-parts-box {
+    &:after {
+      content: "";
+    }
+  }
 
-  .gloval-nav-sp {
+  .global-nav-sp {
     visibility: visible;
     opacity: 1;
   }
@@ -150,40 +178,98 @@
     transition: transform 1s ease, opacity 0.5s ease;
   }
 }
+.global-nav-sp-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  div {
+    width: 48%;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      bottom: 0;
+      right: 0;
+      border-top: 15px solid transparent;
+      border-right: 15px solid $red;
+      position: absolute;
+      z-index: 100;
+    }
+    &::after {
+      content: "";
+      display: block;
+      bottom: 5px;
+      transform: rotate(135deg);
+      font-weight: bold;
+      right: 0px;
+      position: absolute;
+      z-index: 101;
+    }
+    .icon {
+      display: block;
+      font-size: 2.5rem;
+    }
+  }
+  a {
+    color: $red;
+    padding: 10px 5px;
+    font-size: 1.5rem !important;
+    &:hover {
+      color: $red;
+    }
+  }
+  .eigyo {
+    font-size: 1.2rem;
+    color: #1f1f1f;
+    display: block;
+    font-weight: 500;
+  }
+}
 
 // PC用ナビゲーション
-.gloval-nav {
+.global-nav {
   display: none;
   @include xl {
     width: 100%;
-    min-width: 1200px;
-    margin: 0;
+    right: 30px;
     display: block;
-    padding: 15px 25px;
-    background: #fff;
   }
 }
-.gloval-nav-list {
+.global-nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.gloval-nav-list-logo {
+.global-nav-list-logo {
   margin-right: auto;
+  width: 292px;
 }
 
-.gloval-nav-list-item {
+.global-nav-list-item {
   padding-right: 30px;
   text-align: center;
   display: block;
+  &:last-of-type {
+    padding-right: 0;
+  }
 }
 
-.gloval-nav-list-contact {
-  background: #fe5300;
-  padding: 15px 50px;
-  border-radius: 25px;
-  a {
+.global-nav-list-text-link {
+  color: #1f1f1f;
+  font-weight: 700;
+}
+// PC用ナビゲーション ボタン
+.global-nav-list-contact {
+  .global-nav-list-contact-btn {
+    color: $red;
+    font-weight: 700;
+    background: $red;
+    padding: 15px 50px;
+    border-radius: 25px;
+    transition: 0.2s;
     color: #fff;
   }
 }

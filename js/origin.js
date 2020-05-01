@@ -8,7 +8,7 @@
 
 //メニューを押すとトグルが閉じる
 
-$('.gloval-nav-sp a[href]' && '.gloval-nav-sp').on('click', function (event) {
+$('.global-nav-sp a[href]' && '.global-nav-sp').on('click', function (event) {
   $('.nav-toggle').trigger('click');
 });
 

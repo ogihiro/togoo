@@ -3,12 +3,16 @@
 /*-----------------------------------------------------*/
 
 .support-wrapper {
-  // background-image: url("/images/");
-  background-color: #f3aaaa; //仮置
+  background-image: url("../images/support_bg_sp.jpg");
+  background-size: cover;
+  @include pc {
+    background-image: url("../images/support_bg.jpg");
+  }
 }
 
 .support-inner {
   background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   padding: 50px 15px;
   border-radius: 10px;
   @include pc {
