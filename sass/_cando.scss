@@ -41,14 +41,21 @@
       margin-bottom: 30px;
     }
   }
-  &-img {
+  &-image {
     width: 115px;
     margin: 0 auto;
     margin-bottom: 20px;
     @include pc {
       width: 150px;
     }
+    &-1 {
+      width: 110px;
+      @include pc {
+        width: 120px;
+      }
+    }
   }
+
   &-textbox {
     width: 100%;
     @include pc {

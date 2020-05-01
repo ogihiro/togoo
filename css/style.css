@@ -988,15 +988,25 @@ h1 a {
   }
 }
 
-.cando-content-img {
+.cando-content-image {
   width: 115px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  .cando-content-img {
+  .cando-content-image {
     width: 150px;
+  }
+}
+
+.cando-content-image-1 {
+  width: 110px;
+}
+
+@media (min-width: 768px) {
+  .cando-content-image-1 {
+    width: 120px;
   }
 }
 
@@ -1086,6 +1096,10 @@ h1 a {
   .reason-content-image {
     width: calc(40% - 60px);
   }
+}
+
+.reason-content-image-1 {
+  max-width: 250px;
 }
 
 .reason-content-title {
@@ -1453,5 +1467,9 @@ h1 a {
   .flow-list-image {
     width: 18%;
   }
+}
+
+.flow-list-image-4 {
+  max-width: 100px;
 }
 /*# sourceMappingURL=style.css.map */

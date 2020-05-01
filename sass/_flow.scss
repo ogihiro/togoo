@@ -87,5 +87,8 @@
     @include pc {
       width: 18%;
     }
+    &-4 {
+      max-width: 100px;
+    }
   }
 }
