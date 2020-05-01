@@ -49,7 +49,7 @@
     }
   }
   &-caution {
-    color: #f22424;
+    color: $red;
     @include pc {
       font-size: 1.4rem;
     }
