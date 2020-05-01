@@ -24,7 +24,10 @@
   }
   &-lead-focus {
     color: #f5ff00;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    @include pc {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -49,7 +52,7 @@
       margin-bottom: 35px;
     }
   }
-  &-campain {
+  &-campaign {
     padding-top: 80px;
     @include pc {
       padding-top: 65px;
@@ -74,7 +77,7 @@
   &-title {
     text-align: center;
     font-size: 1.6rem;
-    padding: 8px;
+    padding: 5px;
     width: 160px;
     border-radius: 42px;
     border: 1px solid #000;
@@ -83,7 +86,7 @@
     text-indent: 1px;
     @include pc {
       font-size: 2.2rem;
-      padding: 8px;
+      padding: 5px;
       width: 210px;
       margin-bottom: 60px;
     }
@@ -106,9 +109,9 @@
       }
     }
   }
-  &-price-campain {
+  &-price-campaign {
     &:before {
-      content: "今なら月初無料";
+      content: "今なら初月無料";
       position: absolute;
       color: $red;
       font-size: 2rem;
@@ -157,9 +160,13 @@
   &-check {
     display: block;
     color: $orange;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     text-align: center;
+    font-weight: 700;
+    @include pc {
+      font-size: 2.2rem;
+    }
     &:last-of-type {
       margin-bottom: 30px;
     }
