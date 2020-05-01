@@ -68,8 +68,30 @@
   <main>
     <div class="mv-wrapper">
       <div class="mv-inner section-inner">
-        <div class="mv-pc pc"><img src="images/mv_pc.png" alt="飲食店のためのWEB決済サービス ToGooのイメージ画像">
-          <div class="site-copy-wrapper">
+        <div class="mv-pc">
+          <div class="mv-pc-left">
+            <div class="mv-pc-merit">
+              <img src="images/mv_pc_merit_image.png" alt="振込手数料・販売手数料ゼロ。売上金を月4回無料で振り込み">
+            </div>
+            <div class="site-copy-wrapper">
+              <div class="site-copy-box site-copy-box-first">
+                <p class="site-copy site-copy-first">飲食店のための</p>
+              </div>
+              <div class="site-copy-box site-copy-box-second">
+                <p class="site-copy site-copy-second">WEB決済サービス</p>
+              </div>
+            </div>
+          </div>
+          <div class="mv-pc-right">
+            <div class="mv-pc-image">
+              <img src="images/mv_pc_buy_image.png" alt="ToGoo トゥーグーで色々なサービスを始められるイメージ画像">
+            </div>
+          </div>
+        </div>
+        <div class="mv-sp">
+          <div class="mv-sp-image">
+            <img src="images/mv_sp_image.png" alt="ToGoo トゥーグーで色々なサービスを始められるイメージ画像"></div>
+          <div class="site-copy-wrapper-sp">
             <div class="site-copy-box site-copy-box-first">
               <p class="site-copy site-copy-first">飲食店のための</p>
             </div>
@@ -78,7 +100,6 @@
             </div>
           </div>
         </div>
-        <div class="mv-sp sp"><img src="images/mv_sp@2x.jpg" alt="飲食店のためのWEB決済サービス ToGooのイメージ画像"></div>
       </div>
     </div>
 
@@ -502,13 +523,14 @@
   </script>
   <!--mvのキャッチコピーを動かす-->
   <script>
-    $('.site-copy').textyle({
-      duration: 300, //エフェクト時間(ミリ秒)
-      delay: 50, //文字間のエフェクト間隔(ミリ秒)
-      easing: 'swing', //エフェクトのイージングパターン
-      callback: null //エフェクト完了後の処理（コールバック）
+    $(function () {
+      $('.site-copy').textyle({
+        duration: 350, //エフェクト時間(ミリ秒)
+        delay: 50, //文字間のエフェクト間隔(ミリ秒)
+        easing: 'swing', //エフェクトのイージングパターン
+        callback: null //エフェクト完了後の処理（コールバック）
+      });
     });
   </script>
 </body>
-
 </html>

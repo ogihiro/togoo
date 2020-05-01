@@ -746,12 +746,100 @@ h1 a {
 
 .mv-inner .mv-sp {
   margin-top: 50px;
+  display: block;
 }
 
-.mv-inner .mv-pc {
-  margin-top: 60px;
+@media (min-width: 768px) {
+  .mv-inner .mv-sp {
+    display: none;
+  }
 }
 
+.mv-pc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mv-pc {
+    margin-top: 60px;
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mv-pc .mv-pc-left {
+    margin-right: 20px;
+    max-width: 620px;
+  }
+  .mv-pc .mv-pc-right {
+    margin-top: 50px;
+  }
+  .mv-pc .mv-pc-merit {
+    margin-bottom: 25px;
+  }
+}
+
+.mv-sp {
+  background: url("../images/mv_sp_bg.jpg");
+  background-size: cover;
+  padding-left: 25px;
+  padding-bottom: 32px;
+  overflow: hidden;
+}
+
+.mv-sp .mv-sp-image {
+  margin-bottom: 15px;
+  min-width: 370px;
+}
+
+/*------------------------------------------------------
+テキストアニメーション PC
+/*-----------------------------------------------------*/
+.site-copy-box-first {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .site-copy-box-first {
+    margin-bottom: 15px;
+  }
+}
+
+.site-copy-box p {
+  padding: 5px 10px;
+  background: #fff;
+  opacity: 0;
+  line-height: 1;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .site-copy-box p {
+    padding: 10px 18px;
+  }
+}
+
+.site-copy span {
+  opacity: 0;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  font-size: 2.8rem;
+  color: #f22424;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .site-copy span {
+    font-size: 4.5rem;
+  }
+}
+
+/*------------------------------------------------------
+テキストアニメーション SP
+/*-----------------------------------------------------*/
 /*------------------------------------------------------
 リードコンテンツ
 /*-----------------------------------------------------*/
@@ -1471,27 +1559,5 @@ h1 a {
 
 .flow-list-image-4 {
   max-width: 100px;
-}
-
-.site-copy-box-first {
-  margin-bottom: 20px;
-}
-
-.site-copy {
-  opacity: 0;
-  background: #fff;
-  display: inline-block;
-  padding: 0 18px;
-}
-
-.site-copy span {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  opacity: 0;
-  font-size: 4.5rem;
-  color: #f22424;
-  font-weight: 700;
-  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
