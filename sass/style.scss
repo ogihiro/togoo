@@ -11,3 +11,23 @@
 @import "_difference.scss";
 @import "_support.scss";
 @import "_flow.scss";
+
+.site-copy-box-first {
+  margin-bottom: 20px;
+}
+.site-copy {
+  opacity: 0;
+  background: #fff;
+  display: inline-block;
+  padding: 0 18px;
+}
+.site-copy span {
+  position: relative;
+  top: 10px; //topとleft同時指定で斜めの動き
+  left: 10px;
+  opacity: 0;
+  font-size: 4.5rem;
+  color: $red;
+  font-weight: 700;
+  line-height: 1.8;
+}
