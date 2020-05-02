@@ -1005,6 +1005,43 @@ h1 a {
 /*------------------------------------------------------
 できること
 /*-----------------------------------------------------*/
+.cando-wrapper {
+  position: relative;
+}
+
+.decoration-cando {
+  background-image: url("../images/dekiru_deco_image.png");
+  position: absolute;
+  max-width: calc(385px / 2);
+  height: calc(320px / 2);
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -60px;
+  right: -15px;
+  width: 40vw;
+}
+
+@media (min-width: 768px) {
+  .decoration-cando {
+    width: 30vw;
+    top: -70px;
+    right: -10px;
+    max-width: calc(385px / 1.5);
+    height: calc(320px / 1.5);
+  }
+}
+
+@media (min-width: 992px) {
+  .decoration-cando {
+    width: 20vw;
+    top: -90px;
+    right: 5%;
+    max-width: 385px;
+    height: 320px;
+  }
+}
+
 .cando-inner {
   position: relative;
   z-index: 1;
@@ -1542,6 +1579,43 @@ h1 a {
 /*------------------------------------------------------
 ご利用料金
 /*-----------------------------------------------------*/
+.price-wrapper {
+  position: relative;
+}
+
+.decoration-price {
+  background-image: url("../images/price_deco_image.png");
+  position: absolute;
+  max-width: calc(385px / 2);
+  height: calc(320px / 2);
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -60px;
+  right: -15px;
+  width: 40vw;
+}
+
+@media (min-width: 768px) {
+  .decoration-price {
+    width: 30vw;
+    top: -70px;
+    right: -10px;
+    max-width: calc(385px / 1.5);
+    height: calc(320px / 1.5);
+  }
+}
+
+@media (min-width: 992px) {
+  .decoration-price {
+    width: 20vw;
+    top: -90px;
+    right: 5%;
+    max-width: 385px;
+    height: 320px;
+  }
+}
+
 .price-inner {
   position: relative;
   z-index: 1;
