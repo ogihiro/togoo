@@ -1,0 +1,84 @@
+/*------------------------------------------------------
+お問い合わせ
+
+/*-----------------------------------------------------*/
+.contact-title-box {
+  margin-bottom: 30px;
+  @include pc {
+    margin-bottom: 70px;
+  }
+}
+
+.contact-content {
+  @include pc {
+    background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+    border-radius: 10px;
+    padding: 60px;
+  }
+  &-lead {
+    font-size: 1.5rem;
+    margin-bottom: 17px;
+    font-weight: 700;
+    @include pc {
+      font-size: 2.2rem;
+      margin-bottom: 22px;
+      color: #fff;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+  &-company {
+    font-size: 1.2rem;
+    margin-bottom: 17px;
+    @include pc {
+      font-size: 1.5rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  &-phone {
+    display: block;
+    padding: 25px 30px;
+    font-size: 3.1rem;
+    background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    @include pc {
+      background: none;
+      font-size: 6.1rem;
+      padding: 0;
+      pointer-events: none;
+      line-height: 1;
+    }
+    &-tap {
+      font-size: 1.2rem;
+      display: block;
+      padding: 4px 10px;
+      background-color: #fff;
+      border-radius: 30px;
+      color: #000;
+      text-align: center;
+      width: 180px;
+      margin: 0 auto 10px;
+      font-weight: normal;
+      @include pc {
+        display: none;
+      }
+    }
+  }
+  .tel-icon {
+    color: #fff;
+    font-size: 3rem;
+    line-height: 1.8;
+    font-weight: 700;
+    margin-right: -10px;
+    vertical-align: middle;
+    @include pc {
+      font-size: 6.1rem;
+      line-height: 0;
+    }
+  }
+}

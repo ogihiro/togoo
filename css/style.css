@@ -1971,4 +1971,111 @@ h1 a {
     margin-right: 10px;
   }
 }
+
+/*------------------------------------------------------
+お問い合わせ
+
+/*-----------------------------------------------------*/
+.contact-title-box {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .contact-title-box {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+    border-radius: 10px;
+    padding: 60px;
+  }
+}
+
+.contact-content-lead {
+  font-size: 1.5rem;
+  margin-bottom: 17px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .contact-content-lead {
+    font-size: 2.2rem;
+    margin-bottom: 22px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+.contact-content-company {
+  font-size: 1.2rem;
+  margin-bottom: 17px;
+}
+
+@media (min-width: 768px) {
+  .contact-content-company {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.contact-content-phone {
+  display: block;
+  padding: 25px 30px;
+  font-size: 3.1rem;
+  background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-content-phone {
+    background: none;
+    font-size: 6.1rem;
+    padding: 0;
+    pointer-events: none;
+    line-height: 1;
+  }
+}
+
+.contact-content-phone-tap {
+  font-size: 1.2rem;
+  display: block;
+  padding: 4px 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  text-align: center;
+  width: 180px;
+  margin: 0 auto 10px;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .contact-content-phone-tap {
+    display: none;
+  }
+}
+
+.contact-content .tel-icon {
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.8;
+  font-weight: 700;
+  margin-right: -10px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .contact-content .tel-icon {
+    font-size: 6.1rem;
+    line-height: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
