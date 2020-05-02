@@ -1,0 +1,177 @@
+/*------------------------------------------------------
+ご利用料金
+/*-----------------------------------------------------*/
+.price-inner {
+  position: relative;
+  z-index: 1;
+}
+.price-title {
+  margin-bottom: 20px;
+  color: #fff;
+
+  @include pc {
+    margin-bottom: 30px;
+  }
+  &-lead {
+    margin-bottom: 30px;
+    color: #fff;
+
+    @include pc {
+      margin-bottom: 80px;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+  &-lead-focus {
+    color: #f5ff00;
+    font-size: 2rem;
+  }
+}
+
+.price-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.price-content {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+
+  @include pc {
+    width: calc(100% / 2 - 10px);
+    padding: 65px 30px;
+  }
+  &:not(last-child) {
+    margin-bottom: 20px;
+    @include pc {
+      margin-bottom: 35px;
+    }
+  }
+  &-campain {
+    padding-top: 80px;
+    @include pc {
+      padding-top: 65px;
+    }
+  }
+  &-wide {
+    width: 100%;
+    @include pc {
+      padding: 30px;
+    }
+  }
+  &-inner-wide {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include pc {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+  &-title {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 8px;
+    width: 160px;
+    border-radius: 42px;
+    border: 1px solid #000;
+    margin: 0 auto 20px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    @include pc {
+      font-size: 2.2rem;
+      padding: 8px;
+      width: 210px;
+      margin-bottom: 60px;
+    }
+  }
+  &-price {
+    font-size: 2.9rem;
+    color: $orange;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+    @include pc {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    .perone {
+      font-size: 2.2rem;
+      @include pc {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  &-price-campain {
+    &:before {
+      content: "今なら月初無料";
+      position: absolute;
+      color: $red;
+      font-size: 2rem;
+      font-weight: bold;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -120px;
+      width: 100%;
+      @include pc {
+        top: -40px;
+      }
+    }
+  }
+  &-text {
+    font-size: 1.3rem;
+    @include pc {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  &-image {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    @include pc {
+      width: calc(40% - 40px);
+      margin-right: 40px;
+      border-right: 1px solid #000;
+      padding-right: 70px;
+      margin-bottom: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &-text-box {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+    @include pc {
+      width: 60%;
+      padding-top: 0;
+      border-top: none;
+      text-align-last: left;
+    }
+  }
+  &-check {
+    display: block;
+    color: $orange;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+    &:before {
+      content: "";
+      background-image: url(../images/icon_check_red@2x.png);
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}

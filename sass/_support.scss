@@ -13,12 +13,16 @@
 .support-inner {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  padding: 50px 15px;
+  padding: 50px 20px;
   border-radius: 10px;
+  width: 94%;
   @include pc {
     background-color: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
+    @include pc {
+      width: 90%;
+    }
   }
 }
 
@@ -31,7 +35,6 @@
 
 .support-lead {
   font-weight: bold;
-  line-height: 2;
   margin-bottom: 30px;
   @include pc {
     font-size: 2rem;
