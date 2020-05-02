@@ -1,6 +1,40 @@
 /*------------------------------------------------------
 ご利用料金
 /*-----------------------------------------------------*/
+.price-wrapper {
+  position: relative;
+}
+
+.decoration-price {
+  background-image: url("../images/price_deco_image.png");
+  position: absolute;
+  max-width: calc(385px / 2);
+  height: calc(320px / 2);
+  z-index: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -60px;
+  right: -15px;
+  width: 40vw;
+
+  @include pc {
+    width: 30vw;
+
+    top: -70px;
+    right: -10px;
+    max-width: calc(385px / 1.5);
+    height: calc(320px / 1.5);
+  }
+  @include lg {
+    width: 20vw;
+
+    top: -90px;
+    right: 5%;
+    max-width: 385px;
+    height: 320px;
+  }
+}
+
 .price-inner {
   position: relative;
   z-index: 1;
