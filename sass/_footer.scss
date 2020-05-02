@@ -1,0 +1,80 @@
+/*------------------------------------------------------
+Footer
+/*-----------------------------------------------------*/
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 30px 25px;
+  text-align: center;
+
+  @include pc {
+    padding: 100px 0 25px;
+  }
+  &-inner {
+    max-width: 450px;
+    margin: 0 auto;
+    @include pc {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+  &-service-logo {
+    max-width: 70%;
+    max-width: 190px;
+    margin: 0 auto 40px;
+    @include pc {
+      max-width: 260px;
+    }
+  }
+}
+
+.footer-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &-logo {
+    width: 130px;
+    margin: 0 auto 10px;
+    @include pc {
+      width: 170px;
+    }
+  }
+  &-adress {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 100%;
+    @include pc {
+      width: auto;
+      text-align-last: left;
+    }
+  }
+}
+
+.footer-detail-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  @include pc {
+    justify-content: center;
+  }
+
+  &-item {
+    @include pc {
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+    a {
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.copyright {
+  color: #6f6f6f;
+  font-size: 1.2rem;
+}
