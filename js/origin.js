@@ -1,3 +1,4 @@
+//SP ナビゲーション設定
 (function ($) {
   $(function () {
     $('.nav-toggle').on('click', function () {
@@ -7,11 +8,12 @@
 })(jQuery);
 
 //メニューを押すとトグルが閉じる
-
 $('.global-nav-sp a[href]' && '.global-nav-sp').on('click', function (event) {
   $('.nav-toggle').trigger('click');
 });
 
+
+//FAQ 設定
 $(function () {
   // [.syncer-acdn]にクリックイベントを設定する
   $('.faq__question').click(function () {
@@ -34,4 +36,26 @@ $(".faq__question").click(function () {
   } else {
     $(this).addClass("faq__question-clicked");
   }
+});
+
+
+//スムーススクロール 設定
+var headerHight = $("header").outerHeight();
+$("a").click(function () {
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? "body" : href);
+  var position = target.offset().top - headerHight;
+  $("html, body").animate({ scrollTop: position }, 500, "swing");
+  //return false;
+});
+
+
+//mvのキャッチコピーを動かす設定 textyle使用
+$(function () {
+  $('.site-copy').textyle({
+    duration: 350, //エフェクト時間(ミリ秒)
+    delay: 50, //文字間のエフェクト間隔(ミリ秒)
+    easing: 'swing', //エフェクトのイージングパターン
+    callback: null //エフェクト完了後の処理（コールバック）
+  });
 });

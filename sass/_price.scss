@@ -86,26 +86,28 @@
     text-indent: 1px;
     @include pc {
       font-size: 2.2rem;
+      line-height: 1.5;
       padding: 5px;
       width: 210px;
       margin-bottom: 60px;
     }
   }
   &-price {
-    font-size: 2.9rem;
+    font-size: 2.2rem;
     color: $orange;
     text-align: center;
     display: block;
     position: relative;
     margin-bottom: 8px;
+    font-weight: 700;
     @include pc {
       font-size: 3.5rem;
       margin-bottom: 20px;
     }
     .perone {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       @include pc {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
   }

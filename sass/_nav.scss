@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
   nav {
     margin-top: 50px;
     width: 90%;
@@ -38,39 +38,39 @@
       color: $yellow;
     }
   }
+  //ゆっくり流してきたいときはON
+  // ul {
+  //   li {
+  //     opacity: 0;
+  //     transform: translateX(200px);
+  //     transition: transform 0.3s ease, opacity 0.2s ease;
 
-  ul {
-    li {
-      opacity: 0;
-      transform: translateX(200px);
-      transition: transform 0.6s ease, opacity 0.2s ease;
-
-      &:nth-child(2) {
-        transition-delay: 0.1s;
-      }
-      &:nth-child(3) {
-        transition-delay: 0.2s;
-      }
-      &:nth-child(4) {
-        transition-delay: 0.3s;
-      }
-      &:nth-child(5) {
-        transition-delay: 0.4s;
-      }
-      &:nth-child(6) {
-        transition-delay: 0.5s;
-      }
-      &:nth-child(7) {
-        transition-delay: 0.6s;
-      }
-      &:nth-child(8) {
-        transition-delay: 0.7s;
-      }
-      &:nth-child(9) {
-        transition-delay: 0.8s;
-      }
-    }
-  }
+  //     &:nth-child(2) {
+  //       transition-delay: 0.1s;
+  //     }
+  //     &:nth-child(3) {
+  //       transition-delay: 0.2s;
+  //     }
+  //     &:nth-child(4) {
+  //       transition-delay: 0.3s;
+  //     }
+  //     &:nth-child(5) {
+  //       transition-delay: 0.4s;
+  //     }
+  //     &:nth-child(6) {
+  //       transition-delay: 0.5s;
+  //     }
+  //     &:nth-child(7) {
+  //       transition-delay: 0.6s;
+  //     }
+  //     &:nth-child(8) {
+  //       transition-delay: 0.7s;
+  //     }
+  //     &:nth-child(9) {
+  //       transition-delay: 0.8s;
+  //     }
+  //   }
+  // }
 }
 .global-nav-sp-logo {
   width: 200px;
@@ -87,6 +87,7 @@
   position: absolute;
   top: 0;
   right: 15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   @include pc {
     padding-top: 16px;
     padding-right: 10px;

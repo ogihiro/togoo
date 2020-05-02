@@ -15,6 +15,7 @@
 .faq__body {
   border: 1px solid #b9b9b9;
   border-radius: 10px;
+  background: #fff;
 }
 
 .faq__question {
@@ -49,11 +50,12 @@
     padding-left: 1.5em;
     text-indent: -1.5em;
     font-size: 1.4rem;
+    line-height: 1.6;
     @include pc {
       padding-left: 3em;
       text-indent: -2.5em;
       font-size: 1.8rem;
-      line-height: 1.5;
+      line-height: 1.4;
     }
     &:before {
       content: "Q.";
@@ -91,7 +93,7 @@
   padding: 15px;
   border-bottom: 1px solid #b9b9b9;
   line-height: 1.8;
-  padding: 15px 35px 15px 15px;
+  padding: 15px;
 
   @include pc {
     line-height: 1;
@@ -104,11 +106,11 @@
   &-text {
     padding-left: 1.5em;
     text-indent: -1.5em;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     @include pc {
       padding-left: 3em;
       text-indent: -2.5em;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 1.5;
     }
     &:before {

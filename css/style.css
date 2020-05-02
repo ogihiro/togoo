@@ -395,7 +395,7 @@ h1 a {
 }
 
 .cv-wrapper-middle {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -421,7 +421,7 @@ h1 a {
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .global-nav-sp nav {
@@ -452,44 +452,6 @@ h1 a {
   color: #f5ff00;
 }
 
-.global-nav-sp ul li {
-  opacity: 0;
-  transform: translateX(200px);
-  transition: transform 0.6s ease, opacity 0.2s ease;
-}
-
-.global-nav-sp ul li:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.global-nav-sp ul li:nth-child(3) {
-  transition-delay: 0.2s;
-}
-
-.global-nav-sp ul li:nth-child(4) {
-  transition-delay: 0.3s;
-}
-
-.global-nav-sp ul li:nth-child(5) {
-  transition-delay: 0.4s;
-}
-
-.global-nav-sp ul li:nth-child(6) {
-  transition-delay: 0.5s;
-}
-
-.global-nav-sp ul li:nth-child(7) {
-  transition-delay: 0.6s;
-}
-
-.global-nav-sp ul li:nth-child(8) {
-  transition-delay: 0.7s;
-}
-
-.global-nav-sp ul li:nth-child(9) {
-  transition-delay: 0.8s;
-}
-
 .global-nav-sp-logo {
   width: 200px;
   text-align: center;
@@ -504,6 +466,7 @@ h1 a {
   position: absolute;
   top: 0;
   right: 15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (min-width: 768px) {
@@ -1698,6 +1661,7 @@ h1 a {
 @media (min-width: 768px) {
   .price-content-title {
     font-size: 2.2rem;
+    line-height: 1.5;
     padding: 5px;
     width: 210px;
     margin-bottom: 60px;
@@ -1705,12 +1669,13 @@ h1 a {
 }
 
 .price-content-price {
-  font-size: 2.9rem;
+  font-size: 2.2rem;
   color: #fd6201;
   text-align: center;
   display: block;
   position: relative;
   margin-bottom: 8px;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -1721,12 +1686,12 @@ h1 a {
 }
 
 .price-content-price .perone {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
   .price-content-price .perone {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -1838,6 +1803,7 @@ h1 a {
 .faq__body {
   border: 1px solid #b9b9b9;
   border-radius: 10px;
+  background: #fff;
 }
 
 .faq__question {
@@ -1881,6 +1847,7 @@ h1 a {
   padding-left: 1.5em;
   text-indent: -1.5em;
   font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
@@ -1888,7 +1855,7 @@ h1 a {
     padding-left: 3em;
     text-indent: -2.5em;
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 }
 
@@ -1929,7 +1896,7 @@ h1 a {
   padding: 15px;
   border-bottom: 1px solid #b9b9b9;
   line-height: 1.8;
-  padding: 15px 35px 15px 15px;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
@@ -1946,14 +1913,14 @@ h1 a {
 .faq__answer-text {
   padding-left: 1.5em;
   text-indent: -1.5em;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
   .faq__answer-text {
     padding-left: 3em;
     text-indent: -2.5em;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 }

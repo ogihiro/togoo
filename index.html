@@ -363,7 +363,7 @@
         </div>
       </div>
     </article>
-    <div class="cv-wrapper bg-stripe cv-wrapper-middle">
+    <div class="cv-wrapper cv-wrapper-middle">
       <div class="cv-inner">
         <a href="#contact-wrapper" class="cv-link">
           <picture>
@@ -526,7 +526,7 @@
           </li>
           <li class="price-content price-content-campaign">
             <h3 class="price-content-title">月額費用</h3>
-            <span class="price-content-price price-content-price-campaign">10,000円 /<span class="perone">1店舗</span></span>
+            <span class="price-content-price price-content-price-campaign">10,000円 / <span class="perone">1店舗</span></span>
             <p class="price-content-text">※サーバーやメンテナンスの費用も含まれています。<br> ※簡単なメニュー内容の変更や、商品登録の代行も承ります。</p>
           </li>
           <li class="price-content price-content-wide">
@@ -547,7 +547,7 @@
         </ul>
       </div>
     </article>
-    <div class="cv-wrapper bg-stripe cv-wrapper-middle">
+    <div class="cv-wrapper cv-wrapper-middle">
       <div class="cv-inner">
         <a href="#contact-wrapper" class="cv-link">
           <picture>
@@ -558,7 +558,7 @@
         </a>
       </div>
     </div>
-    <article id="faq" class="section-wrapper faq-wrapper">
+    <article id="faq" class="section-wrapper faq-wrapper bg-gray">
       <div class="section-inner faq-inner">
         <div class="title-box faq-title-box">
           <h2 class="title faq-title">よくあるご質問</h2>
@@ -631,27 +631,5 @@
   </main>
   <!--/main-->
   <script src="js/origin.js"></script>
-
-  <script>
-    var headerHight = $("header").outerHeight();
-    $("a").click(function () {
-      var href = $(this).attr("href");
-      var target = $(href == "#" || href == "" ? "body" : href);
-      var position = target.offset().top - headerHight;
-      $("html, body").animate({ scrollTop: position }, 500, "swing");
-      //return false;
-    });
-  </script>
-  <!--mvのキャッチコピーを動かす-->
-  <script>
-    $(function () {
-      $('.site-copy').textyle({
-        duration: 350, //エフェクト時間(ミリ秒)
-        delay: 50, //文字間のエフェクト間隔(ミリ秒)
-        easing: 'swing', //エフェクトのイージングパターン
-        callback: null //エフェクト完了後の処理（コールバック）
-      });
-    });
-  </script>
 </body>
 </html>
