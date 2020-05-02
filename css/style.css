@@ -37,6 +37,7 @@ html {
 body {
   font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN";
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {

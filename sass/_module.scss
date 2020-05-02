@@ -33,6 +33,7 @@ html {
 body {
   font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN";
+  overflow-x: hidden;
   @include pc {
     font-size: 1.6rem;
   }
