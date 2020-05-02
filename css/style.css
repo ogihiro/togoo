@@ -34,6 +34,10 @@ html {
   /*ベースを10pxにしています*/
 }
 
+main {
+  overflow: hidden;
+}
+
 body {
   font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN";
@@ -405,6 +409,17 @@ h1 a {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 600ms;
+}
+
+.fadein.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .global-nav-sp {
