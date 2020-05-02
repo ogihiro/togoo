@@ -560,10 +560,6 @@ h1 a {
   }
 }
 
-.open {
-  overflow: hidden;
-}
-
 .open .nav-toggle span {
   background: #fff;
   color: #fff;
@@ -1038,7 +1034,7 @@ h1 a {
 }
 
 .decoration-cando {
-  background-image: url("../images/dekiru_deco_image.png");
+  background-image: url("../images/dekiru_deco_image_02.png");
   position: absolute;
   max-width: calc(385px / 2);
   height: calc(320px / 2);
@@ -1619,8 +1615,8 @@ h1 a {
   z-index: 1;
   background-size: contain;
   background-repeat: no-repeat;
-  top: -60px;
-  right: -15px;
+  top: -70px;
+  left: -15px;
   width: 40vw;
 }
 
@@ -1637,6 +1633,7 @@ h1 a {
 @media (min-width: 992px) {
   .decoration-price {
     width: 20vw;
+    left: auto;
     top: -90px;
     right: 5%;
     max-width: 385px;
