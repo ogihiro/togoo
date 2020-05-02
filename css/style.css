@@ -394,6 +394,18 @@ h1 a {
   color: #fd6201;
 }
 
+.cv-wrapper-middle {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .cv-wrapper-middle {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .global-nav-sp {
   background: transparent linear-gradient(180deg, #fd7500 0%, #fd5801 100%) 0% 0% no-repeat;
   color: #222;
@@ -1314,18 +1326,6 @@ h1 a {
   margin-right: 5px;
 }
 
-.cv-wrapper-middle {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-@media (min-width: 768px) {
-  .cv-wrapper-middle {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-}
-
 /*------------------------------------------------------
 安心のサポート体制
 /*-----------------------------------------------------*/
@@ -1610,7 +1610,13 @@ h1 a {
 
 .price-title-lead-focus {
   color: #f5ff00;
-  font-size: 2rem;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .price-title-lead-focus {
+    font-size: 2rem;
+  }
 }
 
 .price-content-container {
@@ -1643,12 +1649,12 @@ h1 a {
   }
 }
 
-.price-content-campain {
+.price-content-campaign {
   padding-top: 80px;
 }
 
 @media (min-width: 768px) {
-  .price-content-campain {
+  .price-content-campaign {
     padding-top: 65px;
   }
 }
@@ -1680,7 +1686,7 @@ h1 a {
 .price-content-title {
   text-align: center;
   font-size: 1.6rem;
-  padding: 8px;
+  padding: 5px;
   width: 160px;
   border-radius: 42px;
   border: 1px solid #000;
@@ -1692,7 +1698,7 @@ h1 a {
 @media (min-width: 768px) {
   .price-content-title {
     font-size: 2.2rem;
-    padding: 8px;
+    padding: 5px;
     width: 210px;
     margin-bottom: 60px;
   }
@@ -1724,8 +1730,8 @@ h1 a {
   }
 }
 
-.price-content-price-campain:before {
-  content: "今なら月初無料";
+.price-content-price-campaign:before {
+  content: "今なら初月無料";
   position: absolute;
   color: #f22424;
   font-size: 2rem;
@@ -1738,7 +1744,7 @@ h1 a {
 }
 
 @media (min-width: 768px) {
-  .price-content-price-campain:before {
+  .price-content-price-campaign:before {
     top: -40px;
   }
 }
@@ -1789,9 +1795,16 @@ h1 a {
 .price-content-check {
   display: block;
   color: #fd6201;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 15px;
   text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .price-content-check {
+    font-size: 2.2rem;
+  }
 }
 
 .price-content-check:last-of-type {
@@ -1807,5 +1820,155 @@ h1 a {
   background-size: contain;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+/*------------------------------------------------------
+よくあるご質問
+/*-----------------------------------------------------*/
+.faq-title-box {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .faq-title-box {
+    margin-bottom: 70px;
+  }
+}
+
+.faq__body {
+  border: 1px solid #b9b9b9;
+  border-radius: 10px;
+}
+
+.faq__question {
+  padding: 15px 35px 15px 15px;
+  border-bottom: 1px solid #b9b9b9;
+  position: relative;
+  cursor: pointer;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .faq__question {
+    padding: 15px 30px;
+    line-height: 1;
+  }
+}
+
+.faq__question:after {
+  content: "＋";
+  font-size: 18px;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+  margin-right: 15px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .faq__question:after {
+    font-size: 30px;
+    margin-right: 30px;
+  }
+}
+
+.faq__question:last-of-type {
+  border-bottom: none;
+}
+
+.faq__question-text {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .faq__question-text {
+    padding-left: 3em;
+    text-indent: -2.5em;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+
+.faq__question-text:before {
+  content: "Q.";
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .faq__question-text:before {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+}
+
+.faq__question-clicked:after {
+  content: "＋";
+  font-size: 18px;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+  margin-right: 15px;
+  transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  .faq__question-clicked:after {
+    font-size: 30px;
+    margin-right: 30px;
+  }
+}
+
+.faq__answer {
+  display: none;
+  background-color: #f4eed9;
+  padding: 15px;
+  border-bottom: 1px solid #b9b9b9;
+  line-height: 1.8;
+  padding: 15px 35px 15px 15px;
+}
+
+@media (min-width: 768px) {
+  .faq__answer {
+    line-height: 1;
+    padding: 15px 30px;
+  }
+}
+
+.faq__answer:last-of-type {
+  border-bottom: none;
+}
+
+.faq__answer-text {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .faq__answer-text {
+    padding-left: 3em;
+    text-indent: -2.5em;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+
+.faq__answer-text:before {
+  content: "A.";
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .faq__answer-text:before {
+    font-size: 30px;
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
