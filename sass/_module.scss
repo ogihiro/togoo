@@ -258,9 +258,11 @@ h1 {
   }
 }
 .cv-inner-top {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
+  margin-top: -20px;
   @include pc {
     margin-bottom: 100px;
+    margin-top: 0;
   }
 }
 .cv-inner-middle {

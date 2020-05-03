@@ -44,7 +44,7 @@
       margin-top: 50px;
     }
     .mv-pc-merit {
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -62,46 +62,124 @@
 /*------------------------------------------------------
 テキストアニメーション PC
 /*-----------------------------------------------------*/
-.site-copy-box-first {
-  margin-bottom: 8px;
-  @include pc {
-    margin-bottom: 15px;
-  }
-}
-.site-copy-box p {
-  padding: 5px 10px;
-  background: #fff;
-  opacity: 0;
-  line-height: 1;
-  display: inline-block;
-  @include pc {
-    padding: 10px 18px;
-  }
-}
-.site-copy span {
-  opacity: 0;
-  position: relative;
-  top: 10px; //topとleft同時指定で斜めの動き
-  left: 10px;
-  opacity: 0;
-  font-size: 2.8rem;
-  color: $red;
-  font-weight: 700;
-  line-height: 1;
-  @include pc {
-    font-size: 4.5rem;
-  }
-}
+// .site-copy-box-first {
+//   margin-bottom: 8px;
+//   @include pc {
+//     margin-bottom: 15px;
+//   }
+// }
+// .site-copy-box p {
+//   padding: 5px 10px;
+//   background: #fff;
+//   opacity: 0;
+//   line-height: 1;
+//   display: inline-block;
+//   @include pc {
+//     padding: 10px 18px;
+//   }
+// }
+// .site-copy span {
+//   opacity: 0;
+//   position: relative;
+//   top: 10px;
+//   left: 10px;
+//   opacity: 0;
+//   font-size: 2.8rem;
+//   color: $red;
+//   font-weight: 700;
+//   line-height: 1;
+//   @include pc {
+//     font-size: 4.5rem;
+//   }
+// }
 /*------------------------------------------------------
-テキストアニメーション SP
+テキストアニメーション
 /*-----------------------------------------------------*/
+.mv-catch-wrapper .mv-catch-box {
+  display: block;
+}
+.mv-catch-wrapper .mv-catch-bar {
+  position: relative;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+}
+.mv-catch-wrapper .mv-catch-bar:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+}
+.mv-catch-wrapper .mv-catch-txt {
+  transform: translate3d(0, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $red;
+  position: relative;
+  z-index: 100;
+  opacity: 0;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-font-feature-settings: "pkna" on;
+  -moz-font-feature-settings: "pkna" on;
+  font-feature-settings: "pkna" on;
+  @include pc {
+    font-size: 4.8rem;
+    padding: 0 10px;
+  }
+}
+//背景の動き
+.mv-catch-wrapper.move .mv-catch-box-first .mv-catch-bar:before {
+  animation: mv-catch-bar 0.5s ease 0s 1 normal forwards;
+}
+.mv-catch-wrapper.move .mv-catch-box-second .mv-catch-bar:before {
+  animation: mv-catch-bar 0.5s ease 0.2s 1 normal forwards;
+}
+//文字の動き
+.mv-catch-wrapper.move .mv-catch-box-first .mv-catch-txt {
+  animation: mv-catch-txt 0.4s ease 0.5s 1 normal forwards;
+}
+.mv-catch-wrapper.move .mv-catch-box-second .mv-catch-txt {
+  animation: mv-catch-txt 0.4s ease 0.7s 1 normal forwards;
+}
+.mv-catch-box.mv-catch-box-first {
+  margin-bottom: 8px;
+}
+@keyframes mv-catch-bar {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+@keyframes mv-catch-txt {
+  0% {
+    opacity: 0;
+    left: 0;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+    opacity: 100;
+  }
+}
 
 /*------------------------------------------------------
 リードコンテンツ
 /*-----------------------------------------------------*/
 .lead-wrapper {
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
   @include pc {
     padding-top: 70px;
     padding-bottom: 170px;
