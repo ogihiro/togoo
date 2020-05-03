@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   top: -60px;
   right: -15px;
-  width: 40vw;
+  width: 42vw;
 
   @include pc {
     width: 30vw;
@@ -26,9 +26,9 @@
     height: calc(320px / 1.5);
   }
   @include lg {
-    width: 20vw;
+    width: 25vw;
 
-    top: -90px;
+    top: -130px;
     right: 5%;
     max-width: 385px;
     height: 320px;

@@ -134,6 +134,13 @@ img {
 }
 
 /*------------------------------------------------------
+装飾
+/*-----------------------------------------------------*/
+.shadow {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/*------------------------------------------------------
 ヘッダー
 /*-----------------------------------------------------*/
 header {
@@ -217,6 +224,7 @@ h1 a {
   font-size: 1rem;
   display: block;
   width: 100%;
+  line-height: 1.4;
 }
 
 @media (min-width: 768px) {
@@ -227,6 +235,7 @@ h1 a {
 
 .nav-sp-contact-btn .text {
   width: 100%;
+  line-height: 1.4;
 }
 
 @media (min-width: 768px) {
@@ -459,7 +468,7 @@ h1 a {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 8px 0;
+  padding: 6px 0;
   font-weight: 700;
   font-size: 1.8rem;
 }
@@ -634,6 +643,7 @@ h1 a {
 .global-nav-sp-contact div .icon {
   display: block;
   font-size: 2.5rem;
+  line-height: 1.4;
 }
 
 .global-nav-sp-contact a {
@@ -886,7 +896,6 @@ h1 a {
   width: calc(100% / 2 - 10px);
   margin-bottom: 35px;
   background: #fff;
-  box-shadow: 0 0 15px #e0e0e0;
   padding: 32px 10px 20px 10px;
 }
 
@@ -1043,7 +1052,7 @@ h1 a {
   background-repeat: no-repeat;
   top: -60px;
   right: -15px;
-  width: 40vw;
+  width: 42vw;
 }
 
 @media (min-width: 768px) {
@@ -1058,8 +1067,8 @@ h1 a {
 
 @media (min-width: 992px) {
   .decoration-cando {
-    width: 20vw;
-    top: -90px;
+    width: 25vw;
+    top: -130px;
     right: 5%;
     max-width: 385px;
     height: 320px;
@@ -1228,11 +1237,18 @@ h1 a {
 @media (min-width: 768px) {
   .reason-content-image {
     width: calc(40% - 60px);
+    margin-bottom: 0;
   }
 }
 
 .reason-content-image-1 {
-  max-width: 250px;
+  max-width: 230px;
+}
+
+@media (min-width: 768px) {
+  .reason-content-image-1 {
+    max-width: 280px;
+  }
 }
 
 .reason-content-title {
@@ -1247,9 +1263,16 @@ h1 a {
   }
 }
 
+.reason-content-textbox {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 @media (min-width: 768px) {
   .reason-content-textbox {
     width: 50%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1366,7 +1389,6 @@ h1 a {
 
 .support-inner {
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
   border-radius: 10px;
   width: 94%;
@@ -1633,9 +1655,9 @@ h1 a {
 @media (min-width: 992px) {
   .decoration-price {
     width: 20vw;
-    left: auto;
     top: -90px;
-    right: 5%;
+    right: auto;
+    left: 5%;
     max-width: 385px;
     height: 320px;
   }

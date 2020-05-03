@@ -26,9 +26,9 @@
   }
   @include lg {
     width: 20vw;
-    left: auto;
     top: -90px;
-    right: 5%;
+    right: auto;
+    left: 5%;
     max-width: 385px;
     height: 320px;
   }
